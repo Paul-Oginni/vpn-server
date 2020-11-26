@@ -12,6 +12,11 @@ init:
 	terraform init && \
 	popd
 
+plan: init
+	@pushd ./environments/"${ENV}" && \
+	terraform plan -refresh=true && \
+	popd
+	
 apply: init
 	@pushd ./environments/"${ENV}" && \
 	terraform apply -refresh=true && \

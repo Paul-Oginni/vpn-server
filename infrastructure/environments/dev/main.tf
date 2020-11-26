@@ -14,4 +14,6 @@ terraform {
 module "vpn-server" {
   source = "../../modules/vpn-server"
 
+  vpc_id = "vpc-6cb25608"
+
 }
