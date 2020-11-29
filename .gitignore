@@ -1,3 +1,4 @@
 .terraform
 .todo
 .DS_Store
+scratch/*

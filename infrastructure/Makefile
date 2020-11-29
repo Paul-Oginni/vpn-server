@@ -21,5 +21,10 @@ apply: init
 	@pushd ./environments/"${ENV}" && \
 	terraform apply -refresh=true && \
 	popd
+
+destroy:
+	 @pushd ./environments/"${ENV}" && \
+	 terraform destroy
+	 popd
 	
 .PHONY: init apply

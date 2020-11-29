@@ -11,4 +11,3 @@ wg genkey | tee server_private_key | wg pubkey > server_public_key
 wg genkey | tee client_private_key | wg pubkey > client_public_key
 
 # Generate server config
-
